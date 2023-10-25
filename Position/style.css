@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* position */
+/* static, relative, absolute, fixed, sticky */
+
+.parent{
+    background-color: aqua;
+    min-height: 40vh;
+    margin: 2rem;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.child{
+    width: 50px;
+    height: 50px;
+}
+
+.c1{
+    background-color: aquamarine;
+    /* relative to parent size */
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.c5{
+    background-color: green;
+    /* relative to parent size */
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.c5:hover{
+    z-index: 9;
+}
+
+.c2{
+    background-color: rgb(63, 14, 22);
+
+    width: 60px;
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+}
+
+
+.c3{
+    background-color: red;
+    width: 70px;
+    position: sticky;
+    top: 20px;
+
+}
+.c4{
+    background-color: blue;
+}
+
+.gap{
+    height: 3000px;
+}

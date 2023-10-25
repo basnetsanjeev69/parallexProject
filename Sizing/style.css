@@ -1,0 +1,45 @@
+/* Sizing */
+/* absolute size */
+/* px, cm, in, mm */
+h1{
+    font-size: 30px;
+}
+
+/* height ?width */
+
+.wrapper{
+    background-color: aqua;
+    height: 300px;
+}
+
+/* Relative */
+/* em, rem, vh, vw, % */
+
+.wrapper{
+    background-color: aqua;
+    height: 80vh;
+}
+
+.container{
+    background-color: blue;
+    height: 20%;
+}
+
+
+:root{
+    font-size: 40px;
+}
+/* em/rem --> font size * responsive to browser size/
+/* 1em=16px */
+
+.p-parent{
+    font-size: 14px;
+}
+    
+
+.em{
+    font-size: 1em;
+}
+.rem{
+    font-size: 1rem;
+}

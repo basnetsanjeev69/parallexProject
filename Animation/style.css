@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aqua;
+  width: 80%;
+  margin: auto;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  /* background-color: blue; */
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rebeccapurple;
+  /* Animation */
+  /* animation-name: circle;
+    animation-duration: 5s;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out; */
+  animation: circle 5s ease-in-out infinite forwards;
+position: absolute;
+}
+
+@keyframes circle {
+  /* from and to */
+  /* from{
+        background-color: red;
+    }
+    to{
+        background-color: chartreuse;
+    } */
+
+  0% {
+    
+    top: 10px;
+    left: 10px;
+  }
+   15% {
+    
+    top: 10px;
+    left: 50%;
+  }
+
+  25% {
+    top: 10px;
+    left: unset;
+    right: 10px;
+
+  }
+   37% {
+    top: 50%;
+    left: unset;
+    right: 10px;
+
+  }
+
+  50% {
+    top: unset;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  67% {
+    top: unset;
+    bottom: 10px;
+    right: 50%;
+  }
+  75% {
+    bottom: 10px;
+    left: 10px;
+    right: unset;
+  }
+  100% {
+     top: 10px;
+    left: 10px;
+  }
+}
+
+.ball:hover {
+  transform: scale(2);
+  transition: all 0.2s ease;
+}
+
+button {
+  padding: 1rem 2rem;
+  transition-duration: 2s;
+  /* transition-property: color; */
+  /* transition-property: all;
+    transition-delay: 2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  transition: all 0.2s 1s ease-in;
+  animation: rotate 5s ease-in-out infinite forwards;
+}
+
+button:hover {
+  background-color: burlywood;
+  color: antiquewhite;
+  padding: 2rem 3rem;
+}
+
+/* transform */
+h2 {
+  transform: scale(2);
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+         transform: rotate(360deg);
+    } 
+}
